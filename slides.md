@@ -9,7 +9,7 @@ theme: light-icons
 
 # スライドに関する情報（Markdown記法が使えます）
 # プレゼンテーションのメタ情報を記述します（発表者モードなどで表示されます）
-title: 私のおすすめする技術書２冊
+title: 私のおススメする技術書２冊
 
 # 現在のスライドに適用するUnoCSSクラス
 # スライド全体に適用するCSSクラスを指定します（レイアウトや配置が変わります）
@@ -45,9 +45,9 @@ fonts:
   mono: Firple
 ---
 
-# 私のおすすめする技術書２冊
+# 私のおススメする技術書２冊
 
-2026/1/30
+2026/1/30  
 みんなで創る最高のブックリスト  
 エンジニアのための技術書LT会
 
@@ -74,7 +74,9 @@ image: './images/p2.drawio.svg'
   - 10 年くらいインフラエンジニアとして色々やってた(器用貧乏)
     - クラウド／サーバー／ネットワーク／クライアント PC
 - 反応しそうなワード(キーワード)
-  - AWS(IaaS 系や管理系), ActiveDirectory, WSUS, SKYSEA, vSphere, OpenStack, Fortigate, YAMAHA, Allied Telesis, Windows ADK, Kubernetes, OpenTelemetry, Python
+  - AWS(IaaS 系や管理系), ActiveDirectory, OpenStack, FortiGate, YAMAHA, Windows ADK
+- 最近注力していること
+  - Kubernetes, ローカルLLM
 
 ---
 layout: image-right
@@ -94,7 +96,7 @@ image: './images/p3.drawio.svg'
 - ネットワーク基礎
 - Linuxでのネットワークの要素技術
 - Dockerネットワークのしくみ
-- Kubernetesネットワークのしくみ
+- k8sネットワークのしくみ
 - CNI(Container Network Interface)
 - サービスメッシュ
 
@@ -107,37 +109,70 @@ image: './images/p4.drawio.svg'
 
 ## 読んだきっかけ
 
+- すごく運命的な出会いをした
+  - 業務でk8sを触ることになって苦戦してた
+  - 特にネットワークがわからないのがモヤモヤ
+  - 新発売で本が出た
+  - connpassで輪読会が開かれた
+
 ## 感想
+
+- ネットワーク図が直感的に理解できる
+  - 点(インターフェース)と空間(サブネットなど)が色分け
+  - 初耳のワードでも、どの範囲なのかイメージしやすい
+- 1コマンドの裏側の動作が理解できてモヤモヤが少なくなった
+  - iptablesで非常に複雑なことをやっててびっくり😲
 
 ---
 layout: image-right
-image: './images/p3.drawio.svg'
+image: './images/p5.drawio.svg'
 ---
 
-# おススメの本① -概要-
+# おススメの本② -概要-
 
-## **Docker&Kubernetesネットワークのしくみ**
+## **Kubernetesの知識地図**
 
-- 著者：大隈峻太郎
-- 発売日：2025/6/5
-- 頁数：296ページ
+発売日：2023/6/24　頁数：304ページ
 
 ## 章立て
 
-- ネットワーク基礎
-- Linuxでのネットワークの要素技術
-- Dockerネットワークのしくみ
-- Kubernetesネットワークのしくみ
-- CNI(Container Network Interface)
-- サービスメッシュ
+- 使用するツール／サービス
+- アプリケーションの展開
+- Infrastructure as Code
+- アプリケーションの運用
+- セキュリティ
 
 ---
 layout: image-right
-image: './images/p4.drawio.svg'
+image: './images/p6.drawio.svg'
 ---
 
-# おススメの本① -所感-
+# おススメの本② -所感-
 
 ## 読んだきっかけ
 
+- 業務内容上、教科書通りのことしか触れない
+  - k8sが"実際使われているか"が知りたかった
+  - 以前読んだ「知識地図シリーズ」が現場視点で実践的だった記憶があり、手に取った
+
 ## 感想
+
+- 全体的に現場目線で書かれている
+  - k8sで使うGitリポジトリ運用の仕方など
+  - 設計時にどういった観点で考えるべきなのか参考になった
+- k8sに関連する有名なOSSの戦略も触れられている
+  - GitOpsのArgoCDや証明書管理のCert-Managerなど
+  - 自分が知らなかったOSSも出てきて、試してみたくなった
+
+---
+layout: image-right
+image: './images/p7.drawio.svg'
+---
+
+# まとめ
+
+-  
+-
+-
+
+# おススメしたい人
